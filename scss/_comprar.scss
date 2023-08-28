@@ -1,0 +1,41 @@
+.contenedor_secundario{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+    min-height: 100vh;
+}
+
+.encabezado_comprar{
+    display: block;
+    text-align: center;
+    font-size: 270%;
+    font-weight: 600;
+    background-color: $color_tres;
+    padding: 20px 10px;
+}
+
+.lista_comprar{
+    font-size: 235%;
+    text-align: left;
+    background-color: $color_tres;
+    margin: 3% 15%;
+    list-style-image: url(../images/icono_estrella3.png);
+    li{
+        padding: 1% 1%;
+        }
+}
+
+.lista_medios{
+    @extend .lista_comprar;
+    list-style-image: url(../images/pago2.png);
+}
+
+.condicion_cambio{
+    @extend .lista_comprar;
+    list-style-image: url(../images/cambio2.png);
+}

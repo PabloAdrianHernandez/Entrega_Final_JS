@@ -1,0 +1,32 @@
+[
+  {
+    "descripcion": "Campera piel rosa Guess",
+    "talle": "7",
+    "precio": 6000
+  },
+  {
+    "descripcion": "Zapatillas Le Coq Sportiff",
+    "talle": "33",
+    "precio": 5500
+  },
+  {
+    "descripcion": "Remera ML Cheeky",
+    "talle": "8",
+    "precio": 1500
+  },
+  {
+    "descripcion": "Campera jean Cheeky",
+    "talle": "6",
+    "precio": 6800
+  },
+  {
+    "descripcion": "Vestido estampado Mimo",
+    "talle": "L",
+    "precio": 2700
+  },
+  {
+    "descripcion": "Conjunto plush Cheeky",
+    "talle": "M",
+    "precio": 4200
+  }
+]

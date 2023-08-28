@@ -1,0 +1,37 @@
+.encabezado_contacto{
+    @extend .encabezado_comprar;
+    font-size: 150%;
+}
+
+
+.contacto{
+    text-align: center;
+    font-size: 190%;
+    form{
+        display: flex;
+        flex-direction: column;
+        width:45%;
+        padding: 1% 1%;
+        margin: 2% auto;
+        background-color: $color_uno;
+        border-radius: $borde_estandar;
+        label{
+            height: 35px;
+            padding: 1%;
+            }
+        input{
+            height: 25px;
+            padding: 2%;
+            border: none;
+            border-radius: $borde_estandar;
+            }
+        textarea{
+            padding: 2%;
+            border: none;
+            border-radius: $borde_estandar;
+                }
+        }
+}
+
+
+

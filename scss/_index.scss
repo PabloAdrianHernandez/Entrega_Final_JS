@@ -1,0 +1,49 @@
+.contenedor_index{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+    min-height: 100vh;
+
+}    
+
+.main_index{
+    grid-area: main;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    img{
+        width: 45%;
+        padding: 20px;
+        }
+    p{
+        color: #845c19;
+        font-size: 360%;
+        font-weight: 700;
+        padding: 10px;
+        }
+}
+
+.section_index{
+    grid-area: section;
+}
+
+.parrafo_1{
+    display: block;
+    text-align: center;
+    font-size: 270%;
+    font-weight: 400;
+    background-color: $color_dos;
+    padding: 3% 1%;
+}
+
+.parrafo_2{
+    @extend .parrafo_1;
+    background-color: $color_uno;
+}

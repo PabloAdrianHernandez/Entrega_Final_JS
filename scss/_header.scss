@@ -1,0 +1,19 @@
+.header_general{
+            grid-area: header;
+            background-color: $color_uno;
+            border-bottom: solid 8px $color_dos;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 200%;
+                li{
+                    list-style-type: none;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        color:black;
+                        }
+                    }
+                }
+}    

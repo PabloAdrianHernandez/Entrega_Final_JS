@@ -1,0 +1,32 @@
+.contenedor_productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "prod_01 prod_02 prod_03"
+    "prod_04 prod_05 prod_06";
+    margin-bottom: 5%;
+    p{
+        font-size: 160%;
+        text-align: center;
+        margin: 1%;
+        }
+}
+
+@for $i from 1 through 6{
+    .prod_0#{$i}{
+    grid-area: prod_0#{$i};
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+}
+
+.pics{
+    width: 75%;
+    margin: 16% 12% 5% 12%;
+    border-radius: $borde_estandar;
+}
+

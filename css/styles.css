@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/* ----------Variables---------- */
+/* ----------General---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----------Header, general a todas las páginas---------- */
+.header_general {
+  grid-area: header;
+  background-color: #ffc8dd;
+  border-bottom: solid 8px #bde0fe;
+}
+.header_general ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 200%;
+}
+.header_general ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.header_general ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------Index---------- */
+.contenedor_index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas: "header header" "main main" "section section" "footer footer";
+  min-height: 100vh;
+}
+
+.main_index {
+  grid-area: main;
+  display: flex;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.main_index img {
+  width: 45%;
+  padding: 20px;
+}
+.main_index p {
+  color: #845c19;
+  font-size: 360%;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.section_index {
+  grid-area: section;
+}
+
+.parrafo_1, .parrafo_2 {
+  display: block;
+  text-align: center;
+  font-size: 270%;
+  font-weight: 400;
+  background-color: #bde0fe;
+  padding: 3% 1%;
+}
+
+.parrafo_2 {
+  background-color: #ffc8dd;
+}
+
+/* ----------Footer, general a todas las páginas---------- */
+.footer_general {
+  grid-area: footer;
+  background-color: #bde0fe;
+}
+.footer_general ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer_general ul li {
+  list-style-type: none;
+  font-size: 160%;
+  padding: 10px;
+}
+.footer_general ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------Productos---------- */
+.contenedor_productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "prod_01 prod_02 prod_03" "prod_04 prod_05 prod_06";
+  margin-bottom: 5%;
+}
+.contenedor_productos p {
+  font-size: 160%;
+  text-align: center;
+  margin: 1%;
+}
+
+.prod_01 {
+  grid-area: prod_01;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.prod_02 {
+  grid-area: prod_02;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.prod_03 {
+  grid-area: prod_03;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.prod_04 {
+  grid-area: prod_04;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.prod_05 {
+  grid-area: prod_05;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.prod_06 {
+  grid-area: prod_06;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.pics {
+  width: 75%;
+  margin: 16% 12% 5% 12%;
+  border-radius: 4px;
+}
+
+/* ----------Comprar/Vender---------- */
+.contenedor_secundario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header" "main main" "section section" "footer footer";
+  min-height: 100vh;
+}
+
+.encabezado_comprar, .encabezado_contacto {
+  display: block;
+  text-align: center;
+  font-size: 270%;
+  font-weight: 600;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.lista_comprar, .condicion_cambio, .lista_medios {
+  font-size: 235%;
+  text-align: left;
+  background-color: white;
+  margin: 3% 15%;
+  list-style-image: url(../images/icono_estrella3.png);
+}
+.lista_comprar li, .condicion_cambio li, .lista_medios li {
+  padding: 1% 1%;
+}
+
+.lista_medios {
+  list-style-image: url(../images/pago2.png);
+}
+
+.condicion_cambio {
+  list-style-image: url(../images/cambio2.png);
+}
+
+/* ----------Nosotros---------- */
+.nosotros {
+  text-align: center;
+  margin: 4%;
+}
+.nosotros img {
+  width: 40%;
+  float: left;
+  padding: 2%;
+}
+.nosotros p {
+  font-size: 220%;
+  text-align: justify;
+  background-color: white;
+  padding: 1%;
+}
+
+/* ----------Contacto ---------- */
+.encabezado_contacto {
+  font-size: 150%;
+}
+
+.contacto {
+  text-align: center;
+  font-size: 190%;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 1% 1%;
+  margin: 2% auto;
+  background-color: #ffc8dd;
+  border-radius: 4px;
+}
+.contacto form label {
+  height: 35px;
+  padding: 1%;
+}
+.contacto form input {
+  height: 25px;
+  padding: 2%;
+  border: none;
+  border-radius: 4px;
+}
+.contacto form textarea {
+  padding: 2%;
+  border: none;
+  border-radius: 4px;
+}
+
+/* ----------Media queries---------- */
+/* ----------Media queries para tablets---------- */
+@media screen and (max-width: 770px) {
+  /* ----Header, general---- */
+  .header_general ul {
+    font-size: 190%;
+  }
+  /* ----Index---- */
+  .main_index p {
+    font-size: 290%;
+  }
+  .parrafo_1, .parrafo_2 {
+    font-size: 220%;
+  }
+  .parrafo_2 {
+    font-size: 220%;
+  }
+  /* ----Productos----  */
+  .contenedor_productos p {
+    font-size: 135%;
+  }
+  /* ----Comprar---- */
+  .encabezado_comprar, .encabezado_contacto {
+    font-size: 250%;
+  }
+  .lista_comprar, .lista_medios, .condicion_cambio {
+    font-size: 210%;
+  }
+  .lista_medios {
+    font-size: 210%;
+  }
+  .condicion_cambio {
+    font-size: 210%;
+  }
+  /* ----Nosotros---- */
+  .nosotros img {
+    width: 50%;
+  }
+  .nosotros p {
+    font-size: 200%;
+  }
+  /* ----Contacto---- */
+  .encabezado_contacto {
+    font-size: 135%;
+  }
+  .contacto {
+    font-size: 175%;
+  }
+  .contacto form {
+    width: 60%;
+  }
+  .contacto form label {
+    padding: 3%;
+  }
+}
+/* ----------Media queries para móbiles---------- */
+@media screen and (max-width: 450px) {
+  /* ----Header, general---- */
+  .header_general ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 180%;
+  }
+  /* ----Index---- */
+  .contenedor_index {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "section" "footer";
+  }
+  .main_index {
+    flex-wrap: wrap;
+    padding: 2px;
+  }
+  .main_index img {
+    width: 60%;
+  }
+  .main_index p {
+    font-size: 250%;
+    text-align: center;
+  }
+  .parrafo_1, .parrafo_2 {
+    font-size: 170%;
+  }
+  .parrafo_2 {
+    font-size: 170%;
+  }
+  /* ----Productos----  */
+  .contenedor_productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "prod_01 prod_02" "prod_03 prod_04" "prod_05 prod_06";
+    margin-bottom: 5%;
+  }
+  .contenedor_productos p {
+    font-size: 110%;
+  }
+  /* ----Comprar---- */
+  .encabezado_comprar, .encabezado_contacto {
+    font-size: 230%;
+  }
+  .lista_comprar, .lista_medios, .condicion_cambio {
+    font-size: 190%;
+  }
+  .lista_medios {
+    font-size: 190%;
+  }
+  .condicion_cambio {
+    font-size: 190%;
+  }
+  /* ----Nosotros---- */
+  .nosotros img {
+    width: 100%;
+  }
+  .nosotros p {
+    font-size: 180%;
+  }
+  /* ----Contacto---- */
+  .encabezado_contacto {
+    font-size: 125%;
+  }
+  .contacto {
+    font-size: 160%;
+  }
+  .contacto form {
+    width: 70%;
+  }
+  .contacto form label {
+    padding: 3%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

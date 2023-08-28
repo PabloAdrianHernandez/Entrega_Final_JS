@@ -1,0 +1,175 @@
+/* ----------Media queries para tablets---------- */
+
+@media screen and (max-width: 770px){
+
+    /* ----Header, general---- */
+    .header_general ul{
+        font-size: 190%;
+    }
+    
+    /* ----Index---- */
+
+    .main_index{
+        p{
+        font-size: 290%;
+        }
+    }
+
+    .parrafo_1{
+        font-size: 220%;
+    }
+
+    .parrafo_2{
+        font-size: 220%;
+    }
+
+    /* ----Productos----  */
+    .contenedor_productos{
+        p{
+            font-size: 135%;
+            }
+    }
+
+    /* ----Comprar---- */
+    .encabezado_comprar{
+        font-size: 250%;
+    }
+
+    .lista_comprar{
+        font-size: 210%;
+    }
+
+    .lista_medios{
+        font-size: 210%;
+    }
+
+    .condicion_cambio{
+        font-size: 210%;
+    }
+
+    /* ----Nosotros---- */
+    .nosotros{
+        img{
+            width: 50%;
+        }
+        p{
+        font-size: 200%;
+        }
+    }
+
+    /* ----Contacto---- */
+    .encabezado_contacto{
+        font-size: 135%;
+    }
+
+    .contacto{
+        font-size: 175%;
+        form{
+            width:60%;
+            label{
+                padding: 3%;
+            }
+        }
+    }
+
+}
+
+/* ----------Media queries para móbiles---------- */
+
+@media screen and (max-width: 450px){
+
+    /* ----Header, general---- */
+    .header_general ul{
+        flex-direction: column;
+        align-items: center;
+        font-size: 180%;
+    }
+    
+    /* ----Index---- */
+    .contenedor_index{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "footer";
+    }
+
+    .main_index{
+        flex-wrap: wrap;
+        padding: 2px;
+        img{
+            width: 60%;
+            }
+        p{
+        font-size: 250%;
+        text-align: center;
+            }
+    }
+
+    .parrafo_1{
+        font-size: 170%;
+    }
+
+    .parrafo_2{
+        font-size: 170%;
+    }
+
+    /* ----Productos----  */
+    .contenedor_productos{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "prod_01 prod_02"
+        "prod_03 prod_04"
+        "prod_05 prod_06";
+        margin-bottom: 5%;
+        p{
+            font-size: 110%;
+            }
+    }
+
+    /* ----Comprar---- */
+    .encabezado_comprar{
+        font-size: 230%;
+    }
+
+    .lista_comprar{
+        font-size: 190%;
+    }
+
+    .lista_medios{
+        font-size: 190%;
+    }
+
+    .condicion_cambio{
+        font-size: 190%;
+    }
+
+    /* ----Nosotros---- */
+    .nosotros{
+        img{
+            width: 100%;
+        }
+        p{
+        font-size: 180%;
+        }
+    }
+
+    /* ----Contacto---- */
+    .encabezado_contacto{
+        font-size: 125%;
+    }
+
+    .contacto{
+        font-size: 160%;
+        form{
+            width:70%;
+            label{
+                padding: 3%;
+            }
+        }
+    }
+
+}
